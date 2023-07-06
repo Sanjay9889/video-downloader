@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block header %}
+    <div class="indigo">
+        <img class="shadow" width="100%" src="{% static 'core/images/home.png' %}">
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <div class="row pt-5 text-center" id="services">
+        <div class="col-12 col-md-6">
+            <img width="30%" class="p-2" src="{% static 'core/images/youtube.png' %}">
+        </div>
+        <div class="col-12 col-md-6">
+            <p class="text-white text-responsive p-0 pt-md-4 pr-md-5">Download any youtube video, Click Get Started</p>
+            <a href="{% url 'youtube_index' %}" class="btn btn-warning shadow">Get Started</a>
+        </div>
+    </div>
+    <div class="row py-5 text-center">
+        <div class="col-12 col-md-6">
+            <img width="30%" class="p-2" src="{% static 'core/images/facebook.png' %}">
+        </div>
+        <div class="col-12 col-md-6">
+            <p class="text-white text-responsive p-0 pt-md-4 pr-md-5">Download any Facebook video, Click Get Started</p>
+            <a href="{% url 'facebook_index' %}" class="btn btn-warning shadow">Get Started</a>
+        </div>
+    </div>
+{% endblock content %}
